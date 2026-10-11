@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Salma Majdi, diplômée MIAGE : analyse métier, solutions numériques et data. Découvrez mes projets et ma démarche technico-fonctionnelle.">
+<title>Salma Majdi · Métier, technologie & data</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<a class="brand" href="#">Salma Majdi<span>.</span>
+</a>
+<nav aria-label="Navigation principale">
+<a href="#projets">Projets</a>
+<a href="#approche">Approche</a>
+<a href="#parcours">Parcours</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section class="hero">
+<div>
+<div class="eyebrow">Salma Majdi · Consultante technico-fonctionnelle junior</div>
+<h1>Comprendre.<br>Construire.<br>
+<em>Faire le lien.</em>
+</h1>
+<p class="lead">Je relie les besoins métier, les solutions numériques et les données pour transformer une demande en quelque chose de concret, testable et utile.</p>
+<a class="cta" href="#projets">Découvrir mes projets <span aria-hidden="true">↘</span>
+</a>
+<a class="cv-secondary" href="assets/CV-Salma-Majdi.pdf" download>Télécharger mon CV ↓</a>
+</div>
+<div class="hero-aside" aria-label="Trois dimensions complémentaires : métier, technologie et data">
+<div class="orb">
+<div class="orb-center">SM</div>
+</div>
+<span class="orbit-label l1">01 / Compréhension métier</span>
+<span class="orbit-label l2">02 / Réalisation technique</span>
+<span class="orbit-label l3">03 / Analyse de données</span>
+<div class="aside-note">UN PROFIL À L’INTERSECTION</div>
+</div>
+</section>
+<div class="strip">
+<span>Master MIAGE · Université de Bordeaux</span>
+<span>2 ans d’alternance · Bordeaux Métropole</span>
+<span>Programme SI, web client & analytics</span>
+</div>
+<section class="section" id="projets">
+<div class="section-head">
+<div>
+<div class="eyebrow">01 / Expériences & réalisations</div>
+<h2>Mes projets, concrètement.</h2>
+</div>
+<p>Du besoin utilisateur à la recette, de la configuration applicative à l’analyse de données : voici ce que j’ai concrètement travaillé.</p>
+</div>
+<div class="filters" aria-label="Filtrer les projets">
+<button class="filter" data-filter="all" aria-pressed="true">Tous les projets</button>
+<button class="filter" data-filter="si" aria-pressed="false">Métier & SI</button>
+<button class="filter" data-filter="data" aria-pressed="false">Data</button>
+<button class="filter" data-filter="web" aria-pressed="false">Web</button>
+</div>
+<article class="project" data-category="data">
+<div class="num">01</div>
+<div>
+<div class="meta">Projet personnel · Data & produit digital</div>
+<h3>Comprendre les parcours<br>par la donnée.</h3>
+<p>Analyser un jeu de données e-commerce volumineux pour explorer le trafic, le funnel de conversion, les produits et la rétention. Construire le flux analytique : contrôles qualité Python, agrégations DuckDB, modélisation PostgreSQL, analyses SQL et restitution Power BI.</p>
+<a class="project-link" href="https://github.com/salmamajdi/digital-product-analytics" target="_blank" rel="noopener noreferrer">Code et documentation sur GitHub ↗</a>
+<div class="tags">
+<span>Python</span>
+<span>SQL</span>
+<span>PostgreSQL</span>
+<span>DuckDB</span>
+<span>Power BI</span>
+<span>Cohortes</span>
+</div>
+<details>
+<summary>Ma contribution & les livrables</summary>
+<ul>
+<li>Analyses du trafic, du funnel, des produits, de la rétention et des cohortes.</li>
+<li>Construction de tables BI dédiées aux KPI, au trafic quotidien et aux comportements horaires.</li>
+<li>Dashboard Power BI en deux pages : vue d’ensemble, conversion et rétention.</li>
+<li>Agrégation directe des 199 millions de pages vues avec DuckDB avant ingestion dans PostgreSQL.</li>
+<li>Validation de la couverture des données : le taux visite–achat est défini sur les visiteurs observés, et ne représente pas un taux global de la plateforme.</li>
+</ul>
+<p>Analyse réalisée sur le jeu de données e-commerce Synerise RecSys Challenge 2025.</p>
+</details>
+<div class="dashboard-gallery">
+<a href="assets/overview.png" target="_blank" rel="noopener">
+<img src="assets/overview.png" alt="Dashboard Power BI : vue d’ensemble et trafic" loading="lazy">
+</a>
+<a href="assets/conversion-retention.png" target="_blank" rel="noopener">
+<img src="assets/conversion-retention.png" alt="Dashboard Power BI : conversion et rétention" loading="lazy">
+</a>
+<small>Captures réelles du projet · cliquer pour agrandir.</small>
+</div>
+</div>
+<div class="visual dark">
+<div class="visual-label">Périmètre de l’analyse</div>
+<div class="metric">199,45 M</div>
+<div class="metric-sub">pages vues dans le jeu de données</div>
+<div class="data-points">
+<div>
+<strong>21,99 M</strong>
+<span>visiteurs</span>
+</div>
+<div>
+<strong>169</strong>
+<span>jours d’observation</span>
+</div>
+</div>
+<p class="caption">Données analysées dans le cadre du projet personnel.</p>
+</div>
+</article>
+<article class="project" data-category="si">
+<div class="num">02</div>
+<div>
+<div class="meta">Bordeaux Métropole · Alternance · 2023–2025</div>
+<h3>IMAX : un programme,<br>plusieurs projets SI.</h3>
+<p>Au sein de la DGNSI, contribuer au programme IMAX — IMAginer l’eXperience agent — qui regroupe plusieurs projets d’évolution de l’environnement numérique des agents. Mon rôle associe analyse métier, coordination, gouvernance, prototypage et recette.</p>
+<div class="tags">
+<span>Coordination programme</span>
+<span>Gouvernance agile</span>
+<span>Architecture MDM</span>
+<span>AMOA & recette</span>
+</div>
+<details>
+<summary>Ma contribution & les livrables</summary>
+<ul>
+<li>Étude comparative personnelle de ServiceNow, Blueway et Drupal : fonctionnalités, coûts, interopérabilité, maintenance et dépendance éditeur.</li>
+<li>Participation aux ateliers et questionnaires agents ; formalisation des besoins du prototype.</li>
+<li>Création de pages et démarches dans un environnement Drupal de bac à sable, notamment pour le télétravail.</li>
+<li>Préparation et exécution de tests lors de la montée de version RH en ligne ; signalement des anomalies.</li>
+<li>Participation à la mise en place de la gouvernance agile hybride : organisation des échanges, fréquence des instances, supports et suivi des actions.</li>
+<li>Contribution à la coordination et au suivi des projets du programme IMAX : consolidation des informations, préparation de supports et suivi des actions avec les parties prenantes.</li>
+<li>Participation aux échanges de conception du MDM (référentiel central de données) avec les architectes : identification des applications sources et des applications consommatrices de données.</li>
+</ul>
+<p>Le prototype Drupal était réalisé en bac à sable. Sur le MDM, j’ai participé aux travaux avec les architectes, sans porter la responsabilité de l’architecture.</p>
+</details>
+</div>
+<div class="visual">
+<div class="visual-label">Programme IMAX / mes axes de contribution</div>
+<div class="flow">
+<div>Gouvernance & coordination <b>01</b>
+</div>
+<div>Portail agent & démarches <b>02</b>
+</div>
+<div>Référentiel agent / MDM <b>03</b>
+</div>
+<div>Recette RH en ligne <b>04</b>
+</div>
+</div>
+<p class="caption">Plusieurs projets reliés par un même programme.</p>
+</div>
+</article>
+<article class="project" data-category="si">
+<div class="num">03</div>
+<div>
+<div class="meta">Lectra · Cestas · Stage · 2023</div>
+<h3>Relier le fonctionnel<br>à l’applicatif.</h3>
+<p>Travailler sur l’environnement Salesforce et Conga autour de la configuration des offres et des documents commerciaux, en lien avec l’intégrateur.</p>
+<div class="tags">
+<span>Salesforce</span>
+<span>Conga CPQ / CLM</span>
+<span>X-Author</span>
+<span>Tests & documentation</span>
+</div>
+<details>
+<summary>Ma contribution & les livrables</summary>
+<ul>
+<li>Travail sur les bundles et options dans l’environnement CPQ de configuration des devis.</li>
+<li>Intervention sur les modèles de documents avec X-Author, dans l’environnement Conga.</li>
+<li>Tests, documentation et échanges avec l’intégrateur pour clarifier les comportements attendus.</li>
+</ul>
+</details>
+</div>
+<div class="visual">
+<div class="visual-label">Les points de passage</div>
+<div class="flow">
+<div>Besoin fonctionnel <b>↘</b>
+</div>
+<div>Configuration & documents <b>↘</b>
+</div>
+<div>Tests & échanges intégrateur <b>↘</b>
+</div>
+</div>
+</div>
+</article>
+<article class="project" data-category="web">
+<div class="num">04</div>
+<div>
+<div class="meta">AutoZonePro · Projet client · Laval, Canada</div>
+<h3>Du premier échange<br>à la mise en ligne.</h3>
+<p>Concevoir et mettre en ligne le site d’AutoZonePro, une entreprise de detailing automobile : clarifier ses besoins, personnaliser l’interface, configurer les services et vérifier le fonctionnement avant la mise en ligne.</p>
+<a class="project-link" href="https://autozonepro.ca/" target="_blank" rel="noopener noreferrer">Voir le site AutoZonePro <span aria-hidden="true">↗</span>
+</a>
+<div class="tags">
+<span>HTML / CSS / JavaScript</span>
+<span>Formulaires</span>
+<span>Hébergement</span>
+<span>SEO</span>
+</div>
+<details>
+<summary>Ma contribution & les livrables</summary>
+<ul>
+<li>Recueil des besoins, organisation des contenus et personnalisation de l’interface.</li>
+<li>Configuration du domaine, de l’hébergement, des formulaires et des notifications email.</li>
+<li>Tests fonctionnels, ajustements d’affichage et corrections.</li>
+<li>Configuration du référencement avec AIOSEO et soumission du sitemap à Google Search Console.</li>
+<li>Évolution des pages de services, de la demande de devis et du parcours de prise de rendez-vous selon les retours du client.</li>
+</ul>
+<p>Une réalisation menée en autonomie, avec des échanges directs avec le client tout au long du projet.</p>
+</details>
+</div>
+<div class="visual">
+<div class="visual-label">Concevoir · configurer · tester</div>
+<div class="window" aria-hidden="true">
+<div class="windowbar">○ ○ ○ / Projet web</div>
+<div class="windowcontent">
+<i>
+</i>
+<i>
+</i>
+<i>
+</i>
+<div class="mockbutton">
+</div>
+</div>
+</div>
+<p class="caption">Schéma d’interface illustratif.</p>
+</div>
+</article>
+</section>
+<section class="section architecture" id="mdm">
+<div class="section-head">
+<div>
+<div class="eyebrow">Focus / Architecture & données</div>
+<h2>Comprendre d’où vient la donnée.<br>Et qui en a besoin.</h2>
+</div>
+<p>Dans les travaux sur le référentiel agent, j’ai assisté les architectes en contribuant à identifier les applications qui alimentent les données et celles qui les consomment.</p>
+</div>
+<div class="mdm-map">
+<div class="mdm-node">
+<small>EN AMONT</small>
+<h3>Applications sources</h3>
+<p>Repérer les applications qui fournissent les données du référentiel.</p>
+</div>
+<div class="mdm-arrow" aria-hidden="true">→</div>
+<div class="mdm-node central">
+<small>AU CENTRE</small>
+<h3>MDM</h3>
+<p>Référentiel central de données agents.</p>
+</div>
+<div class="mdm-arrow" aria-hidden="true">→</div>
+<div class="mdm-node">
+<small>EN AVAL</small>
+<h3>Applications consommatrices</h3>
+<p>Identifier les applications qui utilisent les données du référentiel.</p>
+</div>
+</div>
+<p class="scope-note">Schéma de principe pour expliquer ma contribution ; il ne reproduit pas l’architecture interne de Bordeaux Métropole.</p>
+</section>
+<section class="section approach" id="approche">
+<div class="eyebrow">02 / Ma manière de travailler</div>
+<h2>Comment j’aborde<br>un projet.</h2>
+<div class="steps">
+<div class="step">
+<small>01 / CLARIFIER</small>
+<h3>Comprendre avant de choisir.</h3>
+<p>Pour IMAX, j’ai comparé les solutions au-delà de leurs fonctionnalités : coûts, maintenance, intégration et capacités internes comptaient aussi dans l’analyse.</p>
+</div>
+<div class="step">
+<small>02 / CONCRÉTISER</small>
+<h3>Passer de l’idée au test.</h3>
+<p>Prototyper une démarche, configurer un formulaire ou préparer une recette permet de confronter une demande au fonctionnement réel d’une solution.</p>
+</div>
+<div class="step">
+<small>03 / RESTITUER</small>
+<h3>Rendre l’information utile.</h3>
+<p>Documenter les anomalies, structurer les données et préparer des supports : des façons différentes de rendre les échanges et les décisions plus clairs.</p>
+</div>
+</div>
+</section>
+<section class="section" id="parcours">
+<div class="eyebrow">03 / Compétences & parcours</div>
+<h2>Métier, technique et data.</h2>
+<div class="skills">
+<div>
+<h3>Métier & projets SI</h3>
+<p>Recueil et formalisation des besoins, comparaison de solutions, gouvernance agile, coordination de programme, documentation et recette fonctionnelle.</p>
+<small>Expériences Bordeaux Métropole & Lectra</small>
+</div>
+<div>
+<h3>Solutions & web</h3>
+<p>Prototypage Drupal, environnement Salesforce / Conga, personnalisation HTML/CSS/JavaScript, configuration et tests web.</p>
+<small>Expériences applicatives & réalisation client</small>
+</div>
+<div>
+<h3>Data & analyse</h3>
+<p>SQL, PostgreSQL et DuckDB pour analyser et structurer les données ; restitution Power BI dans un projet personnel.</p>
+<small>Projet analytics · compétences en développement</small>
+</div>
+</div>
+<div class="journey-heading">
+<div class="eyebrow">Mon parcours en pratique</div>
+<h2>Expériences & engagements.</h2>
+<p>Mon parcours en entreprise, mes projets et mes responsabilités associatives.</p>
+</div>
+<ol class="journey professional">
+<li>
+<div class="journey-card">
+<span class="journey-date">2026</span>
+<span class="journey-kind">PROJET CLIENT</span>
+<h3>Création & gestion web</h3>
+<div class="journey-org">AutoZonePro · À distance</div>
+<p>Du besoin client à la mise en ligne, puis aux évolutions du site : interface, formulaires, hébergement, tests et référencement.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">2026</span>
+<span class="journey-kind">PROJET PERSONNEL</span>
+<h3>Digital Product Analytics</h3>
+<div class="journey-org">Python · SQL · Power BI</div>
+<p>Traitement de données e-commerce, analyses du trafic, de la conversion et de la rétention, restitution dans Power BI.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">2023 – 2025</span>
+<span class="journey-kind">ALTERNANCE</span>
+<h3>Cheffe de projet numérique</h3>
+<div class="journey-org">Bordeaux Métropole · DGNSI</div>
+<p>Programme IMAX : besoins agents, gouvernance agile, coordination, travaux MDM avec les architectes, prototypage et recette RH.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">2024 – 2025</span>
+<span class="journey-kind">ENGAGEMENT ASSOCIATIF</span>
+<h3>Vice-présidente événementiel</h3>
+<div class="journey-org">AssoMiageBordeaux & Fédération MIAGE Connection</div>
+<p>Deux responsabilités associatives exercées en parallèle de mon Master MIAGE.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">2023 – 2024</span>
+<span class="journey-kind">ENGAGEMENT ASSOCIATIF</span>
+<h3>Présidente</h3>
+<div class="journey-org">AssoMiageBordeaux</div>
+<p>Un engagement dans la vie associative de ma formation.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">AVRIL – JUIN 2023</span>
+<span class="journey-kind">STAGE</span>
+<h3>Chargée d’application IT</h3>
+<div class="journey-org">Lectra · Cestas</div>
+<p>Salesforce et Conga CPQ/CLM : configurations, modèles X-Author, tests, documentation et échanges avec l’intégrateur.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">AOÛT – SEPT. 2020</span>
+<span class="journey-kind">STAGE</span>
+<h3>Chargée de recrutement</h3>
+<div class="journey-org">MJ2N · Casablanca</div>
+<p>Analyse des besoins, gestion des candidatures et suivi des échanges clients.</p>
+</div>
+</li>
+</ol>
+<div class="journey-heading">
+<div class="eyebrow">Formation</div>
+<h2>De la gestion<br>aux systèmes d’information.</h2>
+</div>
+<ol class="journey education">
+<li>
+<div class="journey-card">
+<span class="journey-date">2023 – 2025</span>
+<span class="journey-kind">BAC +5</span>
+<h3>Master MIAGE</h3>
+<div class="journey-org">Université de Bordeaux</div>
+<p>Méthodes informatiques appliquées à la gestion des entreprises. Formation suivie en alternance à Bordeaux Métropole.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">2022 – 2023</span>
+<span class="journey-kind">BAC +3</span>
+<h3>Licence 3 MIAGE</h3>
+<div class="journey-org">Université de Bordeaux</div>
+<p>Approfondissement de la double compétence informatique et gestion.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">2021 – 2022</span>
+<span class="journey-kind">ÉCONOMIE & GESTION</span>
+<h3>Licence 2 · Mention Économie</h3>
+<div class="journey-org">Université de Rouen Normandie</div>
+<p>Poursuite du parcours en économie et gestion.</p>
+</div>
+</li>
+<li>
+<div class="journey-card">
+<span class="journey-date">2019 – 2021</span>
+<span class="journey-kind">ÉCONOMIE & GESTION</span>
+<h3>Licence 1 & Licence 2</h3>
+<div class="journey-org">Université Hassan II · Casablanca</div>
+<p>Première partie de mon parcours universitaire en économie et gestion.</p>
+</div>
+</li>
+</ol>
+</section>
+<section class="end" id="contact">
+<div class="eyebrow">Contact · Résidente en France · Mobilité nationale</div>
+<h2>À l’interface du métier,<br>de la technique et de la data.</h2>
+<p>Je recherche un rôle junior en Business Analysis, AMOA, conseil SI / ERP ou coordination de projets IT, où je pourrai mobiliser cette approche technico-fonctionnelle et continuer à développer ma pratique de la data.</p>
+<div class="contact-actions">
+<a class="cta" href="mailto:salmamajdism11@gmail.com">Échangeons par email ↗</a>
+<a class="contact-outline" href="https://www.linkedin.com/in/salma-majdi-2135161b7/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+<a class="contact-outline" href="https://github.com/salmamajdi" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+</div>
+<div class="contact-details">
+<a href="mailto:salmamajdism11@gmail.com">salmamajdism11@gmail.com</a>
+<a href="tel:+33699502138">France · +33 6 99 50 21 38</a>
+<a href="tel:+212681851438">Maroc · +212 6 81 85 14 38</a>
+</div>
+<div class="cv-row">
+<div>
+<strong>Mon parcours en une page.</strong>
+<p>Retrouvez la synthèse de mes expériences, projets et compétences.</p>
+</div>
+<div>
+<a href="assets/CV-Salma-Majdi.pdf" target="_blank" rel="noopener">Consulter le CV ↗</a>
+<a href="assets/CV-Salma-Majdi.pdf" download>Télécharger le PDF ↓</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<span>Salma Majdi · Portfolio</span>
+<span>Analyse métier / Solutions numériques / Data</span>
+</footer>
+<script src="script.js" defer>
+</script>
+</body>
+</html>
