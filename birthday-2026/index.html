@@ -115,6 +115,32 @@ h1,h2,p{margin-top:0}
 @media(max-width:600px){.site-top{padding:15px 13px 0}.logo{font-size:16px}.top-chip{font-size:12px;padding:6px 8px}.layout{padding:22px 13px 25px;min-height:calc(100svh - 60px)}.window-wrap:before{inset:8px -6px -8px 6px}.window-bar{padding:7px 10px;min-height:42px}.bar-title{font-size:16px}.bar-controls i{width:19px;height:19px}.screen{min-height:560px}.scene{padding:24px 16px 34px}.intro-top{min-height:150px;gap:16px}.pixel-friend{width:120px;height:130px}.speech{max-width:180px;padding:10px 12px}.speech strong{font-size:17px}.hero-title{font-size:47px}.subtext{font-size:14px}.eyebrow{font-size:15px}.sticker{font-size:33px}.sticker.bow{top:-12px;left:0}.sticker.star{bottom:4%;right:0}.sticker.heart{display:none}.invite-heading{font-size:40px}.quest-label{font-size:14px}.invite-copy{font-size:13px}.detail{padding:9px 11px}.detail strong{font-size:22px}.question{font-size:21px;margin:17px 0 9px}.retro-button{font-size:18px;min-height:45px;padding:9px 14px}.options{gap:9px}.footnote{font-size:12px}.footer-strip{padding:8px 10px;font-size:12px}.success-scene{padding-top:52px}.success-emblem{font-size:70px}.success-title{font-size:43px}}
 @media(max-width:375px){.pixel-friend{width:106px}.speech{max-width:150px}.hero-title{font-size:39px}.bar-title{font-size:14px}.detail strong{font-size:19px}.options{flex-direction:column}.options button{width:100%}.invite-scene{padding-left:12px;padding-right:12px}.screen{min-height:600px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+.rsvp-scene{padding-top:24px!important;padding-bottom:28px!important}
+.rsvp-bow{font-size:49px;line-height:1.1;margin:11px 0 2px;filter:drop-shadow(4px 4px 0 #f1bbdb);animation:float 2.8s ease-in-out infinite alternate}
+.rsvp-title{font:700 clamp(37px,7vw,58px)/.94 "Pixelify Sans",monospace;color:#6b3977;text-shadow:4px 4px #ffd2e7;letter-spacing:-.05em;margin:0 auto 8px}
+.rsvp-title span{color:#ec65a0}
+.rsvp-intro{font-size:14px;line-height:1.55;margin:0 auto 17px;max-width:480px}
+.rsvp-card{border:3px solid #754878;box-shadow:7px 7px 0 #d3a5d6;background:#fffafd;max-width:490px;margin:0 auto;text-align:left}
+.rsvp-card-top{padding:8px 12px;border-bottom:3px solid #754878;background:#e8d2fa;color:#6b3977;display:flex;justify-content:space-between;gap:8px;align-items:center;font:700 14px "Pixelify Sans",monospace}
+#rsvpForm{padding:19px 18px 17px}
+.rsvp-field-label{font:700 18px "Pixelify Sans",monospace;display:flex;justify-content:space-between;align-items:center;color:#6b3977;margin:0 0 8px}
+.rsvp-field-label span{color:#f175aa}
+.rsvp-input-wrap{display:flex;align-items:center;gap:8px;border:3px solid #bb89b8;box-shadow:3px 3px 0 #ebc7df;background:#fff;min-height:49px;padding:0 12px;margin-bottom:19px}
+.rsvp-input-wrap span{font-size:22px;color:#ea75b0}
+.rsvp-input-wrap:focus-within{border-color:#7c50bd}
+.rsvp-input-wrap input{width:100%;border:0;outline:0;background:transparent;color:#513151;font:600 17px "DM Sans",sans-serif;padding:11px 0;min-width:0}
+.rsvp-input-wrap input::placeholder{color:#bba2b7}
+.rsvp-choice{display:flex;gap:12px;align-items:center;padding:9px 11px;background:#dff7e8;border:2px solid #8ebfa9;color:#43785b;font:700 20px "Pixelify Sans",monospace;margin-bottom:14px}
+.rsvp-choice span{font:700 23px monospace}
+.rsvp-destination{border:2px dashed #d8aed6;background:#fff4e9;padding:8px 12px;margin-bottom:18px;color:#98729a;font:700 15px "Pixelify Sans",monospace}
+.rsvp-destination strong{display:block;color:#74477c;font:700 23px "Pixelify Sans",monospace}
+.rsvp-destination span{display:block;color:#80647c;font:600 13px "DM Sans",sans-serif;margin-top:3px}
+.rsvp-submit{display:flex;width:100%;background:#ffaed1;color:#62346a;min-height:54px}
+.rsvp-disclaimer{font:500 13px/1.6 "DM Sans",sans-serif;color:#906b8f;margin:17px auto 0}
+.rsvp-actions{display:flex;gap:17px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.rsvp-actions .back-link{margin:0}
+@media(max-width:600px){.rsvp-scene{padding-top:18px!important}.rsvp-bow{font-size:38px}.rsvp-title{font-size:41px}.rsvp-card-top{font-size:12px}.rsvp-card-top span:last-child{white-space:nowrap}#rsvpForm{padding:16px 13px 14px}.rsvp-field-label{font-size:16px}.rsvp-choice{font-size:18px}.rsvp-intro{font-size:13px}.rsvp-disclaimer{font-size:12px}.rsvp-actions{gap:14px}}
 </style>
 </head>
 <body>
@@ -176,14 +202,24 @@ h1,h2,p{margin-top:0}
 <div class="options"><button class="retro-button yes-button" id="yes1" type="button">YES, OBVIOUSLY ♡</button><button class="retro-button yes-button alt" id="yes2" type="button">AS IF I HAD A CHOICE 🎀</button></div>
 <p class="footnote">⚠︎ The NO option has been removed by admin.</p>
 </section>
-<section class="scene success-scene" id="success" aria-label="Quest accepted" aria-hidden="true">
-<div class="eyebrow">✦ MISSION ACCEPTED ✦</div>
-<div class="success-emblem" aria-hidden="true">💝</div>
-<h2 class="success-title">I KNEW IT!</h2>
-<p class="success-copy">Iconic choice, babe. 💋<br>You've officially unlocked <strong>Level: A Night Out with Salma</strong>.<br>Now send me your YES so I know you're coming!</p>
-<div class="reply-box"><label for="guestName">YOUR NAME (OPTIONAL) ♡</label><input id="guestName" type="text" maxlength="40" placeholder="e.g. the main character" autocomplete="given-name"><small>This page doesn't collect RSVPs. Use the button below to send me your confirmation!</small></div>
-<div class="share-actions"><button id="share" class="retro-button" type="button">SEND MY YES 💌</button><button id="copy" class="tiny-button" type="button">COPY MESSAGE</button></div>
-<button class="back-link" id="back" type="button">← back to the invite</button>
+<section class="scene rsvp-scene" id="success" aria-label="RSVP quest" aria-hidden="true">
+<div class="eyebrow">✧ LEVEL 02 UNLOCKED ✧</div>
+<div class="rsvp-bow" aria-hidden="true">🎀</div>
+<h2 class="rsvp-title">THE RSVP <span>QUEST!</span></h2>
+<p class="rsvp-intro">You said YES. Iconic behavior. 💋<br>Now tell the birthday girl who's coming!</p>
+<div class="rsvp-card">
+<div class="rsvp-card-top"><span>♡ GUEST REGISTRATION.exe</span><span>✦ LVL 02/02</span></div>
+<form id="rsvpForm">
+<label for="guestName" class="rsvp-field-label">01 / NAME YOUR CHARACTER <span aria-hidden="true">✳</span></label>
+<div class="rsvp-input-wrap"><span aria-hidden="true">♡</span><input id="guestName" name="guestName" type="text" minlength="2" maxlength="40" placeholder="Your name, bestie..." autocomplete="given-name" required></div>
+<label class="rsvp-field-label" for="choicePreview">02 / YOUR FINAL ANSWER</label>
+<div class="rsvp-choice" id="choicePreview" aria-live="polite"><span aria-hidden="true">✓</span> YES, OBVIOUSLY ♡</div>
+<div class="rsvp-destination">✦ PARTY DESTINATION <strong>SAT, NOV 7 · 10 PM</strong><span>L'Étage de L'Abri, Casablanca</span></div>
+<button id="share" class="retro-button rsvp-submit" type="submit">SEND MY RSVP 💌 <span aria-hidden="true">↗</span></button>
+</form>
+</div>
+<p class="rsvp-disclaimer">♡ Final step: send the pre-filled message from your phone.<br>Automatic RSVP collection isn't connected yet.</p>
+<div class="rsvp-actions"><button id="copy" class="tiny-button" type="button">COPY RSVP MESSAGE</button><button class="back-link" id="back" type="button">← back to the invite</button></div>
 </section>
 </div>
 <div class="footer-strip"><span>✿ 2026 • LOVELY MODE ENABLED</span><button class="sound-button" id="sound" type="button" aria-pressed="false" aria-label="Toggle game sound effects">♫ SOUND: OFF</button></div>
@@ -247,21 +283,29 @@ layer.appendChild(piece);
 }
 setTimeout(function(){layer.innerHTML='';},6000);
 }
-function confirm(){
+let selectedChoice='YES, OBVIOUSLY ♡';
+function confirm(choice){
+selectedChoice=choice==='alt'?'AS IF I HAD A CHOICE 🎀':'YES, OBVIOUSLY ♡';
+document.getElementById('choicePreview').innerHTML='<span aria-hidden="true">✓</span> '+selectedChoice;
 showScene('success');play(880);celebrate();
+setTimeout(function(){document.getElementById('guestName').focus({preventScroll:true});},400);
 }
 function message(){
 const name=document.getElementById('guestName').value.trim();
-const namePart=name?'It\'s '+name+' here! ':'';
-return 'Hey Salma 💗 '+namePart+'I SAY YES to your Birthday Quest 🎀 Count me in for Saturday, November 7 at 10 PM, at L’Étage de L’Abri in Casablanca! 💋';
+const namePart=name?"It's "+name+" here! ":'';
+return 'Hey Salma 💗 '+namePart+'My answer is '+selectedChoice+'! Count me in for your Birthday Quest on Saturday, November 7 at 10 PM, at L’Étage de L’Abri in Casablanca! 💋';
 }
 document.getElementById('start').addEventListener('click',openLetter);
 envelope.addEventListener('click',openLetter);
-document.getElementById('yes1').addEventListener('click',confirm);
-document.getElementById('yes2').addEventListener('click',confirm);
+document.getElementById('yes1').addEventListener('click',function(){confirm('yes');});
+document.getElementById('yes2').addEventListener('click',function(){confirm('alt');});
 document.getElementById('back').addEventListener('click',function(){showScene('invite');play(550);});
 sound.addEventListener('click',function(){soundOn=!soundOn;sound.textContent=soundOn?'♫ SOUND: ON':'♫ SOUND: OFF';sound.setAttribute('aria-pressed',String(soundOn));play(740);});
-document.getElementById('share').addEventListener('click',async function(){
+document.getElementById('rsvpForm').addEventListener('submit',async function(event){
+event.preventDefault();
+const input=document.getElementById('guestName');
+input.value=input.value.trim();
+if(!input.reportValidity())return;
 const text=message();
 if(navigator.share){
 try{await navigator.share({title:"Salma's Birthday Quest",text:text,url:window.location.href});return;}catch(e){if(e&&e.name==='AbortError')return;}
@@ -270,12 +314,15 @@ window.open('https://api.whatsapp.com/send?text='+encodeURIComponent(text+' '+wi
 });
 document.getElementById('copy').addEventListener('click',async function(){
 const btn=this;
+const input=document.getElementById('guestName');
+input.value=input.value.trim();
+if(!input.reportValidity())return;
 const content=message()+' '+window.location.href;
 try{
 if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(content);}
 else{const t=document.createElement('textarea');t.value=content;t.style.position='fixed';t.style.left='-9999px';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();}
-btn.textContent='COPIED! ♡';setTimeout(function(){btn.textContent='COPY MESSAGE';},1900);play(790);
-}catch(e){btn.textContent='CAN’T COPY';setTimeout(function(){btn.textContent='COPY MESSAGE';},1900);}
+btn.textContent='COPIED! ♡';setTimeout(function(){btn.textContent='COPY RSVP MESSAGE';},1900);play(790);
+}catch(e){btn.textContent='CAN’T COPY';setTimeout(function(){btn.textContent='COPY RSVP MESSAGE';},1900);}
 });
 })();
 </script>
