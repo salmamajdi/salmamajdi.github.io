@@ -141,6 +141,13 @@ h1,h2,p{margin-top:0}
 .rsvp-actions{display:flex;gap:17px;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:14px}
 .rsvp-actions .back-link{margin:0}
 @media(max-width:600px){.rsvp-scene{padding-top:18px!important}.rsvp-bow{font-size:38px}.rsvp-title{font-size:41px}.rsvp-card-top{font-size:12px}.rsvp-card-top span:last-child{white-space:nowrap}#rsvpForm{padding:16px 13px 14px}.rsvp-field-label{font-size:16px}.rsvp-choice{font-size:18px}.rsvp-intro{font-size:13px}.rsvp-disclaimer{font-size:12px}.rsvp-actions{gap:14px}}
+
+.official-form{padding:19px 18px 17px}
+.rsvp-instruction{display:flex;gap:11px;align-items:center;border:3px solid #bb89b8;box-shadow:3px 3px 0 #ebc7df;background:#fff;padding:11px 14px;font:600 16px/1.35 "DM Sans",sans-serif;margin-bottom:20px}
+.rsvp-step-icon{font-size:24px;color:#ea75b0}
+a.rsvp-submit{text-decoration:none}
+.rsvp-actions a{text-decoration:none;display:inline-flex;align-items:center}
+@media(max-width:600px){.official-form{padding:16px 13px 14px}.rsvp-instruction{font-size:14px}}
 </style>
 </head>
 <body>
@@ -202,24 +209,24 @@ h1,h2,p{margin-top:0}
 <div class="options"><button class="retro-button yes-button" id="yes1" type="button">YES, OBVIOUSLY ♡</button><button class="retro-button yes-button alt" id="yes2" type="button">AS IF I HAD A CHOICE 🎀</button></div>
 <p class="footnote">⚠︎ The NO option has been removed by admin.</p>
 </section>
-<section class="scene rsvp-scene" id="success" aria-label="RSVP quest" aria-hidden="true">
+<section class="scene rsvp-scene" id="success" aria-label="Official RSVP quest" aria-hidden="true">
 <div class="eyebrow">✧ LEVEL 02 UNLOCKED ✧</div>
 <div class="rsvp-bow" aria-hidden="true">🎀</div>
 <h2 class="rsvp-title">THE RSVP <span>QUEST!</span></h2>
-<p class="rsvp-intro">You said YES. Iconic behavior. 💋<br>Now tell the birthday girl who's coming!</p>
+<p class="rsvp-intro">You said YES. Iconic behavior. 💋<br>One final mission: make it official!</p>
 <div class="rsvp-card">
 <div class="rsvp-card-top"><span>♡ GUEST REGISTRATION.exe</span><span>✦ LVL 02/02</span></div>
-<form id="rsvpForm">
-<label for="guestName" class="rsvp-field-label">01 / NAME YOUR CHARACTER <span aria-hidden="true">✳</span></label>
-<div class="rsvp-input-wrap"><span aria-hidden="true">♡</span><input id="guestName" name="guestName" type="text" minlength="2" maxlength="40" placeholder="Your name, bitch..." autocomplete="given-name" required></div>
-<label class="rsvp-field-label" for="choicePreview">02 / YOUR FINAL ANSWER</label>
+<div class="official-form">
+<div class="rsvp-field-label">01 / IDENTIFY YOUR CHARACTER <span aria-hidden="true">✳</span></div>
+<div class="rsvp-instruction"><span class="rsvp-step-icon" aria-hidden="true">♡</span><span>Enter your name in the official guest list.</span></div>
+<div class="rsvp-field-label">02 / YOUR FINAL ANSWER</div>
 <div class="rsvp-choice" id="choicePreview" aria-live="polite"><span aria-hidden="true">✓</span> YES, OBVIOUSLY ♡</div>
 <div class="rsvp-destination">✦ PARTY DESTINATION <strong>SAT, NOV 7 · 10 PM</strong><span>L'Étage de L'Abri, Casablanca</span></div>
-<button id="share" class="retro-button rsvp-submit" type="submit">SEND MY RSVP 💌 <span aria-hidden="true">↗</span></button>
-</form>
+<a id="officialRsvp" class="retro-button rsvp-submit" href="https://forms.gle/U6bYsYV4sszN4tCj6" target="_blank" rel="noopener noreferrer">OPEN RSVP FORM 💌 <span aria-hidden="true">↗</span></a>
 </div>
-<p class="rsvp-disclaimer">♡ Final step: send the pre-filled message from your phone.<br>Automatic RSVP collection isn't connected yet.</p>
-<div class="rsvp-actions"><button id="copy" class="tiny-button" type="button">COPY RSVP MESSAGE</button><button class="back-link" id="back" type="button">← back to the invite</button></div>
+</div>
+<p class="rsvp-disclaimer">♡ Your name is recorded only after you press <strong>Submit</strong> in Google Forms.<br>And yes, the NO button is still missing. 🎀</p>
+<div class="rsvp-actions"><a class="tiny-button" href="https://forms.gle/U6bYsYV4sszN4tCj6" target="_blank" rel="noopener noreferrer">OPEN GUEST LIST ↗</a><button class="back-link" id="back" type="button">← back to the invite</button></div>
 </section>
 </div>
 <div class="footer-strip"><span>✿ 2026 • LOVELY MODE ENABLED</span><button class="sound-button" id="sound" type="button" aria-pressed="false" aria-label="Toggle game sound effects">♫ SOUND: OFF</button></div>
@@ -283,17 +290,10 @@ layer.appendChild(piece);
 }
 setTimeout(function(){layer.innerHTML='';},6000);
 }
-let selectedChoice='YES, OBVIOUSLY ♡';
 function confirm(choice){
-selectedChoice=choice==='alt'?'AS IF I HAD A CHOICE 🎀':'YES, OBVIOUSLY ♡';
+const selectedChoice=choice==='alt'?'AS IF I HAD A CHOICE 🎀':'YES, OBVIOUSLY ♡';
 document.getElementById('choicePreview').innerHTML='<span aria-hidden="true">✓</span> '+selectedChoice;
 showScene('success');play(880);celebrate();
-setTimeout(function(){document.getElementById('guestName').focus({preventScroll:true});},400);
-}
-function message(){
-const name=document.getElementById('guestName').value.trim();
-const namePart=name?"It's "+name+" here! ":'';
-return 'Hey Salma 💗 '+namePart+'My answer is '+selectedChoice+'! Count me in for your Birthday Quest on Saturday, November 7 at 10 PM, at L’Étage de L’Abri in Casablanca! 💋';
 }
 document.getElementById('start').addEventListener('click',openLetter);
 envelope.addEventListener('click',openLetter);
@@ -301,29 +301,7 @@ document.getElementById('yes1').addEventListener('click',function(){confirm('yes
 document.getElementById('yes2').addEventListener('click',function(){confirm('alt');});
 document.getElementById('back').addEventListener('click',function(){showScene('invite');play(550);});
 sound.addEventListener('click',function(){soundOn=!soundOn;sound.textContent=soundOn?'♫ SOUND: ON':'♫ SOUND: OFF';sound.setAttribute('aria-pressed',String(soundOn));play(740);});
-document.getElementById('rsvpForm').addEventListener('submit',async function(event){
-event.preventDefault();
-const input=document.getElementById('guestName');
-input.value=input.value.trim();
-if(!input.reportValidity())return;
-const text=message();
-if(navigator.share){
-try{await navigator.share({title:"Salma's Birthday Quest",text:text,url:window.location.href});return;}catch(e){if(e&&e.name==='AbortError')return;}
-}
-window.open('https://api.whatsapp.com/send?text='+encodeURIComponent(text+' '+window.location.href),'_blank','noopener,noreferrer');
-});
-document.getElementById('copy').addEventListener('click',async function(){
-const btn=this;
-const input=document.getElementById('guestName');
-input.value=input.value.trim();
-if(!input.reportValidity())return;
-const content=message()+' '+window.location.href;
-try{
-if(navigator.clipboard&&navigator.clipboard.writeText){await navigator.clipboard.writeText(content);}
-else{const t=document.createElement('textarea');t.value=content;t.style.position='fixed';t.style.left='-9999px';document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();}
-btn.textContent='COPIED! ♡';setTimeout(function(){btn.textContent='COPY RSVP MESSAGE';},1900);play(790);
-}catch(e){btn.textContent='CAN’T COPY';setTimeout(function(){btn.textContent='COPY RSVP MESSAGE';},1900);}
-});
+
 })();
 </script>
 </body>
